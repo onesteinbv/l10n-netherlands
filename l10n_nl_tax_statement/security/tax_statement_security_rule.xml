@@ -6,8 +6,8 @@
         <field name="name">NL Tax Statement multicompany</field>
         <field name="model_id" ref="model_l10n_nl_vat_statement" />
         <field name="global" eval="True" />
-        <field
-            name="domain_force"
-        >['|',('company_id','=',False),('company_id', 'in', company_ids)]</field>
+        <field name="domain_force">
+            ['|',('company_id','=',False),('company_id', 'in', company_ids)]
+        </field>
     </record>
 </odoo>
